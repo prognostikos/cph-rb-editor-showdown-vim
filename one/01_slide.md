@@ -82,79 +82,112 @@ Matt Rohrer<br/>
 !SLIDE incremental transition=fade
 # Rails.vim
 
-  - `gf` (goto file)
-  - `:A` (alternate file)
-  - `:AV` mapped to `<leader>av` for vsplit
-  - `:AS` mapped to `<leader>as` for split
+  `gf` (goto file)
+
+  `:A` (alternate file)
+
+  `:AV` mapped to `<leader>av` for vsplit
+
+  `:AS` mapped to `<leader>as` for split
 
 !SLIDE incremental transition=fade
 # Rails.vim, p.2
 
-  - `:Rmigration` (opens the latest migration)
-  - `:Rmigration <substring>` (finds a migration with substring)
+  `:Rmigration` (opens the latest migration)
+
+  `:Rmigration <substring>` (finds a migration with substring)
 
 !SLIDE incremental transition=fade
 # Rails.vim, p.3
 
-  - `:Rake`
-  - runs test on test files
-  - runs migrations on migration files
+  `:Rake`
+
+  runs test on test files
+
+  runs migrations on migration files
 
 !SLIDE incremental transition=fade
 # Rails.vim, p.4
 
-  - `:help rails-refactoring`
-  - `:help rails` (in general)
+  `:help rails-refactoring`
+
+  `:help rails` (in general)
 
 !SLIDE incremental transition=fade
 # fugitive.vim (Git)
 
-  - `:Gmove`
-  - `:Gstatus` with diff, add, commit, etc
+  `:Gmove`
+
+  `:Gstatus` with diff, add, commit, etc
 
 !SLIDE incremental transition=fade
 # snipMate
 
-  - `def<Tab>`
-  - `collection.sel<Tab>`
+  `def<Tab>`
+
+  `collection.sel<Tab>`
 
 !SLIDE incremental transition=fade
-# Movement
+# Movement & Text Objects
 
-  - `gg` `gi` (go to top of file, go back to last instert position)
-  - `crtl-o` & `ctrl-i` (switch between jumps)
+  `gg` `gi` (go to top of file, go back to last instert position)
+
+  `crtl-o` & `ctrl-i` (switch between jumps)
+
+  `cip` (Change Inner Paragraph (method))
+
+  `ci"` (Change Inner "")
   
+!SLIDE incremental transition=fade
+# Windows
+
+  `split (sp)`
+
+  `vsplit (vsp)`
+
 !SLIDE incremental transition=fade
 # Registers
 
-  - `"a-z` (named)
-  - `"0` (last yank)
-  - `"1-9` (last delete or change)
-  - `"+` (system keyboard contents - doesn't work for me with tmux)
+  `"a-z` (named)
+
+  `"0` (last yank)
+
+  `"1-9` (last delete or change)
+
+  `"+` (system keyboard contents - doesn't work for me with tmux)
 
 !SLIDE incremental transition=fade
 # What I know Vim can do, but I have not yet explored:
 
-  - Ruby Refactoring [1](https://github.com/ecomba/vim-ruby-refactoring) [2](http://justinram.wordpress.com/2010/12/30/vim-ruby-refactoring-series/)
-  - Ruby Debugging [1](https://github.com/astashov/vim-ruby-debugger)
+  Ruby Refactoring [1](https://github.com/ecomba/vim-ruby-refactoring) [2](http://justinram.wordpress.com/2010/12/30/vim-ruby-refactoring-series/)
+
+  Ruby Debugging [1](https://github.com/astashov/vim-ruby-debugger)
 
 !SLIDE
 # Resources for beginners
 
-  - [http://openvim.com/](http://openvim.com/)
-  - `vimtutor`
-  - `:help`
-  - [http://mislav.uniqpath.com/2011/12/vim-revisited/](http://mislav.uniqpath.com/2011/12/vim-revisited/)
+  `vimtutor`
+
+  [http://openvim.com/](http://openvim.com/)
+
+  `:help`
+
+  [http://mislav.uniqpath.com/2011/12/vim-revisited/](http://mislav.uniqpath.com/2011/12/vim-revisited/)
 
 !SLIDE smbullets
 # Additional resources
 
-  - [The Vim learning curve is a myth](http://robots.thoughtbot.com/post/13164810557/the-vim-learning-curve-is-a-myth)
-  - [Write Code Faster - Expert Level Vim](http://bostonrb.org/presentations/write-code-faster-expert-level-vim)
-  - [Vim Macros and You](http://robots.thoughtbot.com/post/15348543318/vim-macros-and-you)
-  - [Github VimL Twitter feed](https://twitter.com/#!/github_viml)
-  - [Destroy all Software](http://destroyallsoftware.com) (several screencasts, also great testing/ruby stuff)
-  - [Peepcode](http://peepcode.com) (two vim screencasts)
+  [The Vim learning curve is a myth](http://robots.thoughtbot.com/post/13164810557/the-vim-learning-curve-is-a-myth)
+
+  [Write Code Faster - Expert Level Vim](http://bostonrb.org/presentations/write-code-faster-expert-level-vim)
+
+  [Vim Macros and You](http://robots.thoughtbot.com/post/15348543318/vim-macros-and-you)
+
+  [Github VimL Twitter feed](https://twitter.com/#!/github_viml)
+
+  [Destroy all Software](http://destroyallsoftware.com) (several screencasts, also great testing/ruby stuff)
+
+  [Peepcode](http://peepcode.com) (two vim screencasts)
 
 !SLIDE
 # Questions?
