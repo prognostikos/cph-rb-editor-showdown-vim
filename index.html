@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Vim @ CPH.rb 10-Jan-2012</title>
+
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+  <script type="text/javascript" src="./js/coffee-script.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+      setupPreso(false, './');
+  });
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">z, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">shift-space, &larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">n</td><td>toggle notes</td></tr>
+    <tr><td class="key">p</td><td>run preshow</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content" ref="one/01_slide/1">
+<h1>Editor Showdown - Vim!</h1>
+
+<p><img src="./file/one/vim-animated.gif" alt="Vim logo"/></p>
+
+<p>Copenhagen Ruby Brigade<br/>
+10 Jan 2012</p>
+
+<p>Matt Rohrer<br/>
+<a href="mailto:matt@prognostikos.com">matt@prognostikos.com</a><br/>
+<a href="http://prognostikos.com">http://prognostikos.com</a></p></div>
+</div><div class="slide" data-transition="fade"><div class="content" ref="one/01_slide/2">
+<h1>I started as unix admin years ago, which probably why I &#x2665; Vim...</h1></div>
+</div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/3">
+<h1>But here are some reasons why YOU should &#x2665; Vim:</h1>
+
+<ul>
+<li>ubiquity (platforms &amp; programming languages)</li>
+<li>"vim is forever" (20 years and counting)</li>
+<li><a href="http://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/">text objects</a> and other movement commands</li>
+<li>split &amp; vsplit</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/4">
+<h1>Not to rekindle a holy war, but why not the other ancient editor?</h1>
+
+<ul>
+<li>speed (startup, etc)</li>
+<li>modal editing (RSI)</li>
+<li>but really, either is fine</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/5">
+<h1>Quick survey</h1>
+
+<ul>
+<li>How many people here use vim?</li>
+<li>As a programming editor, not a configuration file editor?</li>
+<li>How many people have only memorized :q?</li>
+<li>How many people would like to try vim but are scared?</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/6">
+<h1>My development setup</h1>
+
+<ul>
+<li>iTerm2</li>
+<li>rbenv, ruby-build, rbenv-gemset</li>
+<li>tmux w/tmuxinator</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/7">
+<h1>My development setup, p.2</h1>
+
+<ul>
+<li>MacVim</li>
+<li>guard with guard-spork, guard-rspec &amp; guard-cucumber</li>
+<li>rails c</li>
+<li>rails db</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/8">
+<h1>My Vim configuration</h1>
+
+<ul>
+<li><a href="https://github.com/prognostikos/mmr_config_files">Hosted on github</a></li>
+<li>CREDITS: <a href="https://github.com/mislav">@mislav</a> <a href="https://github.com/amix">@amix</a> <a href="https://github.com/garybernhardt">@garybernhardt</a></li>
+<li>plugins as git submodules, managed by pathogen</li>
+<li>shell script wrapper to start Command-T if no file given</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/9">
+<h1>My Vim configuration, p.2</h1>
+
+<pre class="sh_shell"><code>#!/bin/sh
+[[ -z $@ ]] &amp;&amp; cmd='-c :CommandT'
+exec mvim -v $cmd $@</code></pre></div>
+</div><div class="slide" data-transition="fade"><div class="content commandline" ref="one/01_slide/10">
+<h1>My Vim plugins</h1>
+
+<pre><code><code class="command">$ ls ~/.vim/bundle</code>
+<code class="result">
+vim-coffee-script vim-colors-solarized vim-command-t 
+vim-commentary vim-endwise vim-fugitive vim-javascript 
+vim-jst vim-markdown vim-pathogen vim-rails vim-ruby 
+vim-ruby-refactoring vim-supertab vim-xmledit
+</code></code></pre></div>
+</div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/11">
+<h1>Rails.vim</h1>
+
+<ul>
+<li><code>gf</code> (goto file)</li>
+<li><code>:A</code> (alternate file)</li>
+<li><code>:AV</code> mapped to <code>&lt;leader&gt;av</code> for vsplit</li>
+<li><code>:AS</code> mapped to <code>&lt;leader&gt;as</code> for split</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/12">
+<h1>Rails.vim, p.2</h1>
+
+<ul>
+<li><code>:Rmigration</code> (opens the latest migration)</li>
+<li><code>:Rmigration &lt;substring&gt;</code> (finds a migration with substring)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/13">
+<h1>Rails.vim, p.3</h1>
+
+<ul>
+<li><code>:Rake</code></li>
+<li>runs test on test files</li>
+<li>runs migrations on migration files</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/14">
+<h1>Rails.vim, p.4</h1>
+
+<ul>
+<li><code>:help rails-refactoring</code></li>
+<li><code>:help rails</code> (in general)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/15">
+<h1>fugitive.vim (Git)</h1>
+
+<ul>
+<li><code>:Gmove</code></li>
+<li><code>:Gstatus</code> with diff, add, commit, etc</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/16">
+<h1>snipMate</h1>
+
+<ul>
+<li><code>def&lt;Tab&gt;</code></li>
+<li><code>collection.sel&lt;Tab&gt;</code></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/17">
+<h1>Movement</h1>
+
+<ul>
+<li><code>gg</code> <code>gi</code> (go to top of file, go back to last instert position)</li>
+<li><code>crtl-o</code> &amp; <code>ctrl-i</code> (switch between jumps)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/18">
+<h1>Registers</h1>
+
+<ul>
+<li><code>"a-z</code> (named)</li>
+<li><code>"0</code> (last yank)</li>
+<li><code>"1-9</code> (last delete or change)</li>
+<li><code>"+</code> (system keyboard contents - doesn't work for me with tmux)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/19">
+<h1>What I know Vim can do, but I have not yet explored:</h1>
+
+<ul>
+<li>Ruby Refactoring <a href="https://github.com/ecomba/vim-ruby-refactoring">1</a> <a href="http://justinram.wordpress.com/2010/12/30/vim-ruby-refactoring-series/">2</a></li>
+<li>Ruby Debugging <a href="https://github.com/astashov/vim-ruby-debugger">1</a></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/20">
+<h1>Resources for beginners</h1>
+
+<ul>
+<li><a href="http://openvim.com/">http://openvim.com/</a></li>
+<li><code>vimtutor</code></li>
+<li><code>:help</code></li>
+<li><a href="http://mislav.uniqpath.com/2011/12/vim-revisited/">http://mislav.uniqpath.com/2011/12/vim-revisited/</a></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content smbullets" ref="one/01_slide/21">
+<h1>Additional resources</h1>
+
+<ul>
+<li><a href="http://robots.thoughtbot.com/post/13164810557/the-vim-learning-curve-is-a-myth">The Vim learning curve is a myth</a></li>
+<li><a href="http://bostonrb.org/presentations/write-code-faster-expert-level-vim">Write Code Faster - Expert Level Vim</a></li>
+<li><a href="http://robots.thoughtbot.com/post/15348543318/vim-macros-and-you">Vim Macros and You</a></li>
+<li><a href="https://twitter.com/#!/github_viml">Github VimL Twitter feed</a></li>
+<li><a href="http://destroyallsoftware.com">Destroy all Software</a> (several screencasts, also great testing/ruby stuff)</li>
+<li><a href="http://peepcode.com">Peepcode</a> (two vim screencasts)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/22">
+<h1>Questions?</h1>
+
+<p>Matt Rohrer<br/>
+<a href="mailto:matt@prognostikos.com">matt@prognostikos.com</a><br/>
+<a href="http://prognostikos.com">http://prognostikos.com</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/23">
+<h1>Thanks!</h1></div>
+</div></div>
+
+</body>
+</html>
