@@ -165,109 +165,108 @@ vim-ruby-refactoring vim-supertab vim-xmledit
 </div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/11">
 <h1>Rails.vim</h1>
 
-<ul>
-<li><code>gf</code> (goto file)</li>
-<li><code>:A</code> (alternate file)</li>
-<li><code>:AV</code> mapped to <code>&lt;leader&gt;av</code> for vsplit</li>
-<li><code>:AS</code> mapped to <code>&lt;leader&gt;as</code> for split</li>
-</ul>
-</div>
+<p>  <code>gf</code> (goto file)</p>
+
+<p>  <code>:A</code> (alternate file)</p>
+
+<p>  <code>:AV</code> mapped to <code>&lt;leader&gt;av</code> for vsplit</p>
+
+<p>  <code>:AS</code> mapped to <code>&lt;leader&gt;as</code> for split</p></div>
 </div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/12">
 <h1>Rails.vim, p.2</h1>
 
-<ul>
-<li><code>:Rmigration</code> (opens the latest migration)</li>
-<li><code>:Rmigration &lt;substring&gt;</code> (finds a migration with substring)</li>
-</ul>
-</div>
+<p>  <code>:Rmigration</code> (opens the latest migration)</p>
+
+<p>  <code>:Rmigration &lt;substring&gt;</code> (finds a migration with substring)</p></div>
 </div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/13">
 <h1>Rails.vim, p.3</h1>
 
-<ul>
-<li><code>:Rake</code></li>
-<li>runs test on test files</li>
-<li>runs migrations on migration files</li>
-</ul>
-</div>
+<p>  <code>:Rake</code></p>
+
+<p>  runs test on test files</p>
+
+<p>  runs migrations on migration files</p></div>
 </div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/14">
 <h1>Rails.vim, p.4</h1>
 
-<ul>
-<li><code>:help rails-refactoring</code></li>
-<li><code>:help rails</code> (in general)</li>
-</ul>
-</div>
+<p>  <code>:help rails-refactoring</code></p>
+
+<p>  <code>:help rails</code> (in general)</p></div>
 </div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/15">
 <h1>fugitive.vim (Git)</h1>
 
-<ul>
-<li><code>:Gmove</code></li>
-<li><code>:Gstatus</code> with diff, add, commit, etc</li>
-</ul>
-</div>
+<p>  <code>:Gmove</code></p>
+
+<p>  <code>:Gstatus</code> with diff, add, commit, etc</p></div>
 </div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/16">
 <h1>snipMate</h1>
 
-<ul>
-<li><code>def&lt;Tab&gt;</code></li>
-<li><code>collection.sel&lt;Tab&gt;</code></li>
-</ul>
-</div>
-</div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/17">
-<h1>Movement</h1>
+<p>  <code>def&lt;Tab&gt;</code></p>
 
-<ul>
-<li><code>gg</code> <code>gi</code> (go to top of file, go back to last instert position)</li>
-<li><code>crtl-o</code> &amp; <code>ctrl-i</code> (switch between jumps)</li>
-</ul>
-</div>
+<p>  <code>collection.sel&lt;Tab&gt;</code></p></div>
+</div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/17">
+<h1>Movement &amp; Text Objects</h1>
+
+<p>  <code>gg</code> <code>gi</code> (go to top of file, go back to last instert position)</p>
+
+<p>  <code>crtl-o</code> &amp; <code>ctrl-i</code> (switch between jumps)</p>
+
+<p>  <code>cip</code> (Change Inner Paragraph (method))</p>
+
+<p>  <code>ci"</code> (Change Inner "")</p></div>
 </div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/18">
+<h1>Windows</h1>
+
+<p>  <code>split (sp)</code></p>
+
+<p>  <code>vsplit (vsp)</code></p></div>
+</div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/19">
 <h1>Registers</h1>
 
-<ul>
-<li><code>"a-z</code> (named)</li>
-<li><code>"0</code> (last yank)</li>
-<li><code>"1-9</code> (last delete or change)</li>
-<li><code>"+</code> (system keyboard contents - doesn't work for me with tmux)</li>
-</ul>
-</div>
-</div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/19">
+<p>  <code>"a-z</code> (named)</p>
+
+<p>  <code>"0</code> (last yank)</p>
+
+<p>  <code>"1-9</code> (last delete or change)</p>
+
+<p>  <code>"+</code> (system keyboard contents - doesn't work for me with tmux)</p></div>
+</div><div class="slide" data-transition="fade"><div class="content incremental" ref="one/01_slide/20">
 <h1>What I know Vim can do, but I have not yet explored:</h1>
 
-<ul>
-<li>Ruby Refactoring <a href="https://github.com/ecomba/vim-ruby-refactoring">1</a> <a href="http://justinram.wordpress.com/2010/12/30/vim-ruby-refactoring-series/">2</a></li>
-<li>Ruby Debugging <a href="https://github.com/astashov/vim-ruby-debugger">1</a></li>
-</ul>
-</div>
-</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/20">
+<p>  Ruby Refactoring <a href="https://github.com/ecomba/vim-ruby-refactoring">1</a> <a href="http://justinram.wordpress.com/2010/12/30/vim-ruby-refactoring-series/">2</a></p>
+
+<p>  Ruby Debugging <a href="https://github.com/astashov/vim-ruby-debugger">1</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/21">
 <h1>Resources for beginners</h1>
 
-<ul>
-<li><a href="http://openvim.com/">http://openvim.com/</a></li>
-<li><code>vimtutor</code></li>
-<li><code>:help</code></li>
-<li><a href="http://mislav.uniqpath.com/2011/12/vim-revisited/">http://mislav.uniqpath.com/2011/12/vim-revisited/</a></li>
-</ul>
-</div>
-</div><div class="slide" data-transition="none"><div class="content smbullets" ref="one/01_slide/21">
+<p>  <code>vimtutor</code></p>
+
+<p>  <a href="http://openvim.com/">http://openvim.com/</a></p>
+
+<p>  <code>:help</code></p>
+
+<p>  <a href="http://mislav.uniqpath.com/2011/12/vim-revisited/">http://mislav.uniqpath.com/2011/12/vim-revisited/</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content smbullets" ref="one/01_slide/22">
 <h1>Additional resources</h1>
 
-<ul>
-<li><a href="http://robots.thoughtbot.com/post/13164810557/the-vim-learning-curve-is-a-myth">The Vim learning curve is a myth</a></li>
-<li><a href="http://bostonrb.org/presentations/write-code-faster-expert-level-vim">Write Code Faster - Expert Level Vim</a></li>
-<li><a href="http://robots.thoughtbot.com/post/15348543318/vim-macros-and-you">Vim Macros and You</a></li>
-<li><a href="https://twitter.com/#!/github_viml">Github VimL Twitter feed</a></li>
-<li><a href="http://destroyallsoftware.com">Destroy all Software</a> (several screencasts, also great testing/ruby stuff)</li>
-<li><a href="http://peepcode.com">Peepcode</a> (two vim screencasts)</li>
-</ul>
-</div>
-</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/22">
+<p>  <a href="http://robots.thoughtbot.com/post/13164810557/the-vim-learning-curve-is-a-myth">The Vim learning curve is a myth</a></p>
+
+<p>  <a href="http://bostonrb.org/presentations/write-code-faster-expert-level-vim">Write Code Faster - Expert Level Vim</a></p>
+
+<p>  <a href="http://robots.thoughtbot.com/post/15348543318/vim-macros-and-you">Vim Macros and You</a></p>
+
+<p>  <a href="https://twitter.com/#!/github_viml">Github VimL Twitter feed</a></p>
+
+<p>  <a href="http://destroyallsoftware.com">Destroy all Software</a> (several screencasts, also great testing/ruby stuff)</p>
+
+<p>  <a href="http://peepcode.com">Peepcode</a> (two vim screencasts)</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/23">
 <h1>Questions?</h1>
 
 <p>Matt Rohrer<br/>
 <a href="mailto:matt@prognostikos.com">matt@prognostikos.com</a><br/>
 <a href="http://prognostikos.com">http://prognostikos.com</a></p></div>
-</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/23">
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/24">
 <h1>Thanks!</h1></div>
 </div></div>
 
