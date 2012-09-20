@@ -56,7 +56,7 @@ Matt Rohrer<br/>
 !SLIDE incremental transition=fade
 # My Vim configuration
 
-  - [Hosted on github](https://github.com/prognostikos/mmr_config_files)
+  - [Hosted on github](https://github.com/prognostikos/dotfiles)
   - CREDITS: [@mislav](https://github.com/mislav) [@amix](https://github.com/amix) [@garybernhardt](https://github.com/garybernhardt)
   - plugins as git submodules, managed by pathogen
   - shell script wrapper to start Command-T if no file given
